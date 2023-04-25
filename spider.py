@@ -55,5 +55,21 @@ for table in table_tags_set_2:
     except TypeError:
         pass
 
+for x_idx, x_link in enumerate(all_main_links):
+    x_idx += 1
+    print(f"Fetching data from {x_idx} main website ...")
+    time.sleep(1.3)
+    data = get_data_from_webpage(x_link)
+    soup = BeautifulSoup(data, "lxml")
+    table_tags = soup.find_all("table")
+    all_secondary_links = []
+    table_links_to_tasks = table_tags[2]
+    for table in table_links_to_tasks:
+        try:
+            link = table.find("a")
+            all_secondary_links.append(base_url + link["href"])
+        except TypeError:
+            pass
+
 end = time.time()
 print(f"Scraping process finished succesfully in {round(end - start, 2)} seconds!")
