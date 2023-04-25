@@ -71,5 +71,16 @@ for x_idx, x_link in enumerate(all_main_links):
         except TypeError:
             pass
 
+    for y_idx, y_link in enumerate(all_secondary_links):
+        y_idx += 1
+        print(f"Fetching data from {y_idx} sub website ...")
+        time.sleep(1.3)
+        data = get_data_from_webpage(y_link)
+        soup = BeautifulSoup(data, "lxml")
+        wanted_data_data_set_dict = {}
+
+        wanted_data_table = soup.find_all("table")[2]
+        wanted_data_name = soup.find_all("span", class_="h2")
+
 end = time.time()
 print(f"Scraping process finished succesfully in {round(end - start, 2)} seconds!")
