@@ -38,5 +38,22 @@ table_tags = soup.find_all("table")
 table_tags_set_1 = table_tags[2]
 table_tags_set_2 = table_tags[3]
 
+all_main_links = []
+dataset_dict = {}
+
+for table in table_tags_set_1:
+    try:
+        link = table.find("a")
+        all_main_links.append(base_url + link["href"])
+    except TypeError:
+        pass
+
+for table in table_tags_set_2:
+    try:
+        link = table.find("a")
+        all_main_links.append(base_url + link["href"])
+    except TypeError:
+        pass
+
 end = time.time()
 print(f"Scraping process finished succesfully in {round(end - start, 2)} seconds!")
