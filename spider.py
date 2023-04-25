@@ -82,5 +82,29 @@ for x_idx, x_link in enumerate(all_main_links):
         wanted_data_table = soup.find_all("table")[2]
         wanted_data_name = soup.find_all("span", class_="h2")
 
+        for table in wanted_data_table:
+            wanted_desc_text = table.find("p").text
+            if x_idx == 6 and y_idx == 2:
+                # Special Website Selector Patch for None Standard SubWebsite Structure
+                wanted_answer_text_1 = table.br.next.next.next.next.next
+                wanted_answer_text_2 = table.br.next.next.next.next.next.next.next
+                wanted_answer_text_3 = table.br.next.next.next.next.next.next.next.next.next
+            else:
+                wanted_answer_text_1 = table.br.next
+                wanted_answer_text_2 = table.br.next.next.next
+                wanted_answer_text_3 = table.br.next.next.next.next.next
+
+            item_name = wanted_data_name[0].string + wanted_data_name[1].string
+
+            wanted_data_data_set_dict["name"] = item_name
+            wanted_data_data_set_dict["URL"] = y_link
+            wanted_data_data_set_dict["desc"] = wanted_desc_text
+            wanted_data_data_set_dict["answer_1"] = wanted_answer_text_1
+            wanted_data_data_set_dict["answer_2"] = wanted_answer_text_2
+            wanted_data_data_set_dict["answer_3"] = wanted_answer_text_3
+
+            dataset_dict[f"dataitem_{x_idx}.{y_idx}"] = wanted_data_data_set_dict
+            print(f"{x_idx}.{y_idx} Dataitem_{x_idx}.{y_idx} saved succesfully to main dataset ...")
+
 end = time.time()
 print(f"Scraping process finished succesfully in {round(end - start, 2)} seconds!")
