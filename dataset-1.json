@@ -1,0 +1,586 @@
+{
+    "dataitem_1.1": {
+        "name": "Warmup-1sleepIn",
+        "URL": "https://codingbat.com/prob/p187868",
+        "desc": "The parameter weekday is true if it is a weekday, and the parameter vacation is true if we are on vacation. We sleep in if it is not a weekday or we're on vacation. Return true if we sleep in.",
+        "answer_1": "sleepIn(false, false) → true",
+        "answer_2": "sleepIn(true, false) → false",
+        "answer_3": "sleepIn(false, true) → true"
+    },
+    "dataitem_1.2": {
+        "name": "Warmup-1diff21",
+        "URL": "https://codingbat.com/prob/p116624",
+        "desc": "Given an int n, return the absolute difference between n and 21, except return double the absolute difference if n is over 21.",
+        "answer_1": "diff21(19) → 2",
+        "answer_2": "diff21(10) → 11",
+        "answer_3": "diff21(21) → 0"
+    },
+    "dataitem_1.3": {
+        "name": "Warmup-1nearHundred",
+        "URL": "https://codingbat.com/prob/p184004",
+        "desc": "Given an int n, return true if it is within 10 of 100 or 200. Note: Math.abs(num) computes the absolute value of a number.",
+        "answer_1": "nearHundred(93) → true",
+        "answer_2": "nearHundred(90) → true",
+        "answer_3": "nearHundred(89) → false"
+    },
+    "dataitem_1.4": {
+        "name": "Warmup-1missingChar",
+        "URL": "https://codingbat.com/prob/p190570",
+        "desc": "Given a non-empty string and an int n, return a new string where the char at index n has been removed. The value of n will be a valid index of a char in the original string (i.e. n will be in the range 0..str.length()-1 inclusive).",
+        "answer_1": "missingChar(\"kitten\", 1) → \"ktten\"",
+        "answer_2": "missingChar(\"kitten\", 0) → \"itten\"",
+        "answer_3": "missingChar(\"kitten\", 4) → \"kittn\""
+    },
+    "dataitem_1.5": {
+        "name": "Warmup-1backAround",
+        "URL": "https://codingbat.com/prob/p161642",
+        "desc": "Given a string, take the last char and return a new string with the last char added at the front and back, so \"cat\" yields \"tcatt\". The original string will be length 1 or more.",
+        "answer_1": "backAround(\"cat\") → \"tcatt\"",
+        "answer_2": "backAround(\"Hello\") → \"oHelloo\"",
+        "answer_3": "backAround(\"a\") → \"aaa\""
+    },
+    "dataitem_1.6": {
+        "name": "Warmup-1startHi",
+        "URL": "https://codingbat.com/prob/p191022",
+        "desc": "Given a string, return true if the string starts with \"hi\" and false otherwise.",
+        "answer_1": "startHi(\"hi there\") → true",
+        "answer_2": "startHi(\"hi\") → true",
+        "answer_3": "startHi(\"hello hi\") → false"
+    },
+    "dataitem_1.7": {
+        "name": "Warmup-1hasTeen",
+        "URL": "https://codingbat.com/prob/p178986",
+        "desc": "We'll say that a number is \"teen\" if it is in the range 13..19 inclusive. Given 3 int values, return true if 1 or more of them are teen.",
+        "answer_1": "hasTeen(13, 20, 10) → true",
+        "answer_2": "hasTeen(20, 19, 10) → true",
+        "answer_3": "hasTeen(20, 10, 13) → true"
+    },
+    "dataitem_1.8": {
+        "name": "Warmup-1mixStart",
+        "URL": "https://codingbat.com/prob/p151713",
+        "desc": "Return true if the given string begins with \"mix\", except the 'm' can be anything, so \"pix\", \"9ix\" .. all count.",
+        "answer_1": "mixStart(\"mix snacks\") → true",
+        "answer_2": "mixStart(\"pix snacks\") → true",
+        "answer_3": "mixStart(\"piz snacks\") → false"
+    },
+    "dataitem_1.9": {
+        "name": "Warmup-1close10",
+        "URL": "https://codingbat.com/prob/p172021",
+        "desc": "Given 2 int values, return whichever value is nearest to the value 10, or return 0 in the event of a tie. Note that Math.abs(n) returns the absolute value of a number.",
+        "answer_1": "close10(8, 13) → 8",
+        "answer_2": "close10(13, 8) → 8",
+        "answer_3": "close10(13, 7) → 0"
+    },
+    "dataitem_1.10": {
+        "name": "Warmup-1stringE",
+        "URL": "https://codingbat.com/prob/p173784",
+        "desc": "Return true if the given string contains between 1 and 3 'e' chars.",
+        "answer_1": "stringE(\"Hello\") → true",
+        "answer_2": "stringE(\"Heelle\") → true",
+        "answer_3": "stringE(\"Heelele\") → false"
+    },
+    "dataitem_1.11": {
+        "name": "Warmup-1everyNth",
+        "URL": "https://codingbat.com/prob/p196441",
+        "desc": "Given a non-empty string and an int N, return the string made starting with char 0, and then every Nth char of the string. So if N is 3, use char 0, 3, 6, ... and so on. N is 1 or more.",
+        "answer_1": "everyNth(\"Miracle\", 2) → \"Mrce\"",
+        "answer_2": "everyNth(\"abcdefg\", 2) → \"aceg\"",
+        "answer_3": "everyNth(\"abcdefg\", 3) → \"adg\""
+    },
+    "dataitem_2.1": {
+        "name": "String-1helloName",
+        "URL": "https://codingbat.com/prob/p171896",
+        "desc": "Given a string name, e.g. \"Bob\", return a greeting of the form \"Hello Bob!\".",
+        "answer_1": "helloName(\"Bob\") → \"Hello Bob!\"",
+        "answer_2": "helloName(\"Alice\") → \"Hello Alice!\"",
+        "answer_3": "helloName(\"X\") → \"Hello X!\""
+    },
+    "dataitem_2.2": {
+        "name": "String-1makeOutWord",
+        "URL": "https://codingbat.com/prob/p184030",
+        "desc": "Given an \"out\" string length 4, such as \"<<>>\", and a word, return a new string where the word is in the middle of the out string, e.g. \"<<word>>\". Note: use str.substring(i, j) to extract the String starting at index i and going up to but not including index j.",
+        "answer_1": "makeOutWord(\"<<>>\", \"Yay\") → \"<<Yay>>\"",
+        "answer_2": "makeOutWord(\"<<>>\", \"WooHoo\") → \"<<WooHoo>>\"",
+        "answer_3": "makeOutWord(\"[[]]\", \"word\") → \"[[word]]\""
+    },
+    "dataitem_2.3": {
+        "name": "String-1firstHalf",
+        "URL": "https://codingbat.com/prob/p172267",
+        "desc": "Given a string of even length, return the first half. So the string \"WooHoo\" yields \"Woo\".",
+        "answer_1": "firstHalf(\"WooHoo\") → \"Woo\"",
+        "answer_2": "firstHalf(\"HelloThere\") → \"Hello\"",
+        "answer_3": "firstHalf(\"abcdef\") → \"abc\""
+    },
+    "dataitem_2.4": {
+        "name": "String-1nonStart",
+        "URL": "https://codingbat.com/prob/p143825",
+        "desc": "Given 2 strings, return their concatenation, except omit the first char of each. The strings will be at least length 1.",
+        "answer_1": "nonStart(\"Hello\", \"There\") → \"ellohere\"",
+        "answer_2": "nonStart(\"java\", \"code\") → \"avaode\"",
+        "answer_3": "nonStart(\"shotl\", \"java\") → \"hotlava\""
+    },
+    "dataitem_2.5": {
+        "name": "String-1theEnd",
+        "URL": "https://codingbat.com/prob/p162477",
+        "desc": "Given a string, return a string length 1 from its front, unless front is false, in which case return a string length 1 from its back. The string will be non-empty.",
+        "answer_1": "theEnd(\"Hello\", true) → \"H\"",
+        "answer_2": "theEnd(\"Hello\", false) → \"o\"",
+        "answer_3": "theEnd(\"oh\", true) → \"o\""
+    },
+    "dataitem_2.6": {
+        "name": "String-1endsLy",
+        "URL": "https://codingbat.com/prob/p103895",
+        "desc": "Given a string, return true if it ends in \"ly\".",
+        "answer_1": "endsLy(\"oddly\") → true",
+        "answer_2": "endsLy(\"y\") → false",
+        "answer_3": "endsLy(\"oddy\") → false"
+    },
+    "dataitem_2.7": {
+        "name": "String-1middleThree",
+        "URL": "https://codingbat.com/prob/p115863",
+        "desc": "Given a string of odd length, return the string length 3 from its middle, so \"Candy\" yields \"and\". The string length will be at least 3.",
+        "answer_1": "middleThree(\"Candy\") → \"and\"",
+        "answer_2": "middleThree(\"and\") → \"and\"",
+        "answer_3": "middleThree(\"solving\") → \"lvi\""
+    },
+    "dataitem_2.8": {
+        "name": "String-1lastChars",
+        "URL": "https://codingbat.com/prob/p138183",
+        "desc": "Given 2 strings, a and b, return a new string made of the first char of a and the last char of b, so \"yo\" and \"java\" yields \"ya\". If either string is length 0, use '@' for its missing char.",
+        "answer_1": "lastChars(\"last\", \"chars\") → \"ls\"",
+        "answer_2": "lastChars(\"yo\", \"java\") → \"ya\"",
+        "answer_3": "lastChars(\"hi\", \"\") → \"h@\""
+    },
+    "dataitem_2.9": {
+        "name": "String-1seeColor",
+        "URL": "https://codingbat.com/prob/p199216",
+        "desc": "Given a string, if the string begins with \"red\" or \"blue\" return that color string, otherwise return the empty string.",
+        "answer_1": "seeColor(\"redxx\") → \"red\"",
+        "answer_2": "seeColor(\"xxred\") → \"\"",
+        "answer_3": "seeColor(\"blueTimes\") → \"blue\""
+    },
+    "dataitem_2.10": {
+        "name": "String-1extraFront",
+        "URL": "https://codingbat.com/prob/p172063",
+        "desc": "Given a string, return a new string made of 3 copies of the first 2 chars of the original string. The string may be any length. If there are fewer than 2 chars, use whatever is there.",
+        "answer_1": "extraFront(\"Hello\") → \"HeHeHe\"",
+        "answer_2": "extraFront(\"ab\") → \"ababab\"",
+        "answer_3": "extraFront(\"H\") → \"HHH\""
+    },
+    "dataitem_2.11": {
+        "name": "String-1startWord",
+        "URL": "https://codingbat.com/prob/p141494",
+        "desc": "Given a string and a second \"word\" string, we'll say that the word matches the string if it appears at the front of the string, except its first char does not need to match exactly. On a match, return the front of the string, or otherwise return the empty string. So, so with the string \"hippo\" the word \"hi\" returns \"hi\" and \"xip\" returns \"hip\". The word will be at least length 1.",
+        "answer_1": "startWord(\"hippo\", \"hi\") → \"hi\"",
+        "answer_2": "startWord(\"hippo\", \"xip\") → \"hip\"",
+        "answer_3": "startWord(\"hippo\", \"i\") → \"h\""
+    },
+    "dataitem_3.1": {
+        "name": "Logic-1cigarParty",
+        "URL": "https://codingbat.com/prob/p159531",
+        "desc": "When squirrels get together for a party, they like to have cigars. A squirrel party is successful when the number of cigars is between 40 and 60, inclusive. Unless it is the weekend, in which case there is no upper bound on the number of cigars. Return true if the party with the given values is successful, or false otherwise.",
+        "answer_1": "cigarParty(30, false) → false",
+        "answer_2": "cigarParty(50, false) → true",
+        "answer_3": "cigarParty(70, true) → true"
+    },
+    "dataitem_3.2": {
+        "name": "Logic-1caughtSpeeding",
+        "URL": "https://codingbat.com/prob/p157733",
+        "desc": "You are driving a little too fast, and a police officer stops you. Write code to compute the result, encoded as an int value: 0=no ticket, 1=small ticket, 2=big ticket. If speed is 60 or less, the result is 0. If speed is between 61 and 80 inclusive, the result is 1. If speed is 81 or more, the result is 2. Unless it is your birthday -- on that day, your speed can be 5 higher in all cases.",
+        "answer_1": "caughtSpeeding(60, false) → 0",
+        "answer_2": "caughtSpeeding(65, false) → 1",
+        "answer_3": "caughtSpeeding(65, true) → 0"
+    },
+    "dataitem_3.3": {
+        "name": "Logic-1love6",
+        "URL": "https://codingbat.com/prob/p137742",
+        "desc": "The number 6 is a truly great number. Given two int values, a and b, return true if either one is 6. Or if their sum or difference is 6. Note: the function Math.abs(num) computes the absolute value of a number.",
+        "answer_1": "love6(6, 4) → true",
+        "answer_2": "love6(4, 5) → false",
+        "answer_3": "love6(1, 5) → true"
+    },
+    "dataitem_3.4": {
+        "name": "Logic-1more20",
+        "URL": "https://codingbat.com/prob/p118290",
+        "desc": "Return true if the given non-negative number is 1 or 2 more than a multiple of 20. See also: Introduction to Mod",
+        "answer_1": "more20(20) → false",
+        "answer_2": "more20(21) → true",
+        "answer_3": "more20(22) → true"
+    },
+    "dataitem_3.5": {
+        "name": "Logic-1nearTen",
+        "URL": "https://codingbat.com/prob/p193613",
+        "desc": "Given a non-negative number \"num\", return true if num is within 2 of a multiple of 10. Note: (a % b) is the remainder of dividing a by b, so (7 % 5) is 2. See also: Introduction to Mod",
+        "answer_1": "nearTen(12) → true",
+        "answer_2": "nearTen(17) → false",
+        "answer_3": "nearTen(19) → true"
+    },
+    "dataitem_3.6": {
+        "name": "Logic-1teaParty",
+        "URL": "https://codingbat.com/prob/p177181",
+        "desc": "We are having a party with amounts of tea and candy. Return the int outcome of the party encoded as 0=bad, 1=good, or 2=great. A party is good (1) if both tea and candy are at least 5. However, if either tea or candy is at least double the amount of the other one, the party is great (2). However, in all cases, if either tea or candy is less than 5, the party is always bad (0).",
+        "answer_1": "teaParty(6, 8) → 1",
+        "answer_2": "teaParty(3, 8) → 0",
+        "answer_3": "teaParty(20, 6) → 2"
+    },
+    "dataitem_3.7": {
+        "name": "Logic-1twoAsOne",
+        "URL": "https://codingbat.com/prob/p113261",
+        "desc": "Given three ints, a b c, return true if it is possible to add two of the ints to get the third.",
+        "answer_1": "twoAsOne(1, 2, 3) → true",
+        "answer_2": "twoAsOne(3, 1, 2) → true",
+        "answer_3": "twoAsOne(3, 2, 2) → false"
+    },
+    "dataitem_3.8": {
+        "name": "Logic-1lastDigit",
+        "URL": "https://codingbat.com/prob/p169213",
+        "desc": "Given three ints, a b c, return true if two or more of them have the same rightmost digit. The ints are non-negative. Note: the % \"mod\" operator computes the remainder, e.g. 17 % 10 is 7.",
+        "answer_1": "lastDigit(23, 19, 13) → true",
+        "answer_2": "lastDigit(23, 19, 12) → false",
+        "answer_3": "lastDigit(23, 19, 3) → true"
+    },
+    "dataitem_3.9": {
+        "name": "Logic-1maxMod5",
+        "URL": "https://codingbat.com/prob/p115384",
+        "desc": "Given two int values, return whichever value is larger. However if the two values have the same remainder when divided by 5, then the return the smaller value. However, in all cases, if the two values are the same, return 0. Note: the % \"mod\" operator computes the remainder, e.g. 7 % 5 is 2.",
+        "answer_1": "maxMod5(2, 3) → 3",
+        "answer_2": "maxMod5(6, 2) → 6",
+        "answer_3": "maxMod5(3, 2) → 3"
+    },
+    "dataitem_3.10": {
+        "name": "Logic-1blueTicket",
+        "URL": "https://codingbat.com/prob/p192267",
+        "desc": "You have a blue lottery ticket, with ints a, b, and c on it. This makes three pairs, which we'll call ab, bc, and ac. Consider the sum of the numbers in each pair. If any pair sums to exactly 10, the result is 10. Otherwise if the ab sum is exactly 10 more than either bc or ac sums, the result is 5. Otherwise the result is 0.",
+        "answer_1": "blueTicket(9, 1, 0) → 10",
+        "answer_2": "blueTicket(9, 2, 0) → 0",
+        "answer_3": "blueTicket(6, 1, 4) → 10"
+    },
+    "dataitem_4.1": {
+        "name": "String-2doubleChar",
+        "URL": "https://codingbat.com/prob/p165312",
+        "desc": "Given a string, return a string where for every char in the original, there are two chars.",
+        "answer_1": "doubleChar(\"The\") → \"TThhee\"",
+        "answer_2": "doubleChar(\"AAbb\") → \"AAAAbbbb\"",
+        "answer_3": "doubleChar(\"Hi-There\") → \"HHii--TThheerree\""
+    },
+    "dataitem_4.2": {
+        "name": "String-2countCode",
+        "URL": "https://codingbat.com/prob/p123614",
+        "desc": "Return the number of times that the string \"code\" appears anywhere in the given string, except we'll accept any letter for the 'd', so \"cope\" and \"cooe\" count.",
+        "answer_1": "countCode(\"aaacodebbb\") → 1",
+        "answer_2": "countCode(\"codexxcode\") → 2",
+        "answer_3": "countCode(\"cozexxcope\") → 2"
+    },
+    "dataitem_4.3": {
+        "name": "String-2bobThere",
+        "URL": "https://codingbat.com/prob/p175762",
+        "desc": "Return true if the given string contains a \"bob\" string, but where the middle 'o' char can be any char.",
+        "answer_1": "bobThere(\"abcbob\") → true",
+        "answer_2": "bobThere(\"b9b\") → true",
+        "answer_3": "bobThere(\"bac\") → false"
+    },
+    "dataitem_4.4": {
+        "name": "String-2repeatEnd",
+        "URL": "https://codingbat.com/prob/p152339",
+        "desc": "Given a string and an int n, return a string made of n repetitions of the last n characters of the string. You may assume that n is between 0 and the length of the string, inclusive.",
+        "answer_1": "repeatEnd(\"Hello\", 3) → \"llollollo\"",
+        "answer_2": "repeatEnd(\"Hello\", 2) → \"lolo\"",
+        "answer_3": "repeatEnd(\"Hello\", 1) → \"o\""
+    },
+    "dataitem_4.5": {
+        "name": "String-2prefixAgain",
+        "URL": "https://codingbat.com/prob/p136417",
+        "desc": "Given a string, consider the prefix string made of the first N chars of the string. Does that prefix string appear somewhere else in the string? Assume that the string is not empty and that N is in the range 1..str.length().",
+        "answer_1": "prefixAgain(\"abXYabc\", 1) → true",
+        "answer_2": "prefixAgain(\"abXYabc\", 2) → true",
+        "answer_3": "prefixAgain(\"abXYabc\", 3) → false"
+    },
+    "dataitem_4.6": {
+        "name": "String-2sameStarChar",
+        "URL": "https://codingbat.com/prob/p194491",
+        "desc": "Returns true if for every '*' (star) in the string, if there are chars both immediately before and after the star, they are the same.",
+        "answer_1": "sameStarChar(\"xy*yzz\") → true",
+        "answer_2": "sameStarChar(\"xy*zzz\") → false",
+        "answer_3": "sameStarChar(\"*xa*az\") → true"
+    },
+    "dataitem_4.7": {
+        "name": "String-2starOut",
+        "URL": "https://codingbat.com/prob/p139564",
+        "desc": "Return a version of the given string, where for every star (*) in the string the star and the chars immediately to its left and right are gone. So \"ab*cd\" yields \"ad\" and \"ab**cd\" also yields \"ad\".",
+        "answer_1": "starOut(\"ab*cd\") → \"ad\"",
+        "answer_2": "starOut(\"ab**cd\") → \"ad\"",
+        "answer_3": "starOut(\"sm*eilly\") → \"silly\""
+    },
+    "dataitem_5.1": {
+        "name": "Array-2countEvens",
+        "URL": "https://codingbat.com/prob/p162010",
+        "desc": "Return the number of even ints in the given array. Note: the % \"mod\" operator computes the remainder, e.g. 5 % 2 is 1.",
+        "answer_1": "countEvens([2, 1, 2, 3, 4]) → 3",
+        "answer_2": "countEvens([2, 2, 0]) → 3",
+        "answer_3": "countEvens([1, 3, 5]) → 0"
+    },
+    "dataitem_5.2": {
+        "name": "Array-2sum13",
+        "URL": "https://codingbat.com/prob/p127384",
+        "desc": "Return the sum of the numbers in the array, returning 0 for an empty array. Except the number 13 is very unlucky, so it does not count and numbers that come immediately after a 13 also do not count.",
+        "answer_1": "sum13([1, 2, 2, 1]) → 6",
+        "answer_2": "sum13([1, 1]) → 2",
+        "answer_3": "sum13([1, 2, 2, 1, 13]) → 6"
+    },
+    "dataitem_5.3": {
+        "name": "Array-2lucky13",
+        "URL": "https://codingbat.com/prob/p194525",
+        "desc": "Given an array of ints, return true if the array contains no 1's and no 3's.",
+        "answer_1": "lucky13([0, 2, 4]) → true",
+        "answer_2": "lucky13([1, 2, 3]) → false",
+        "answer_3": "lucky13([1, 2, 4]) → false"
+    },
+    "dataitem_5.4": {
+        "name": "Array-2fizzArray",
+        "URL": "https://codingbat.com/prob/p180920",
+        "desc": "Given a number n, create and return a new int array of length n, containing the numbers 0, 1, 2, ... n-1. The given n may be 0, in which case just return a length 0 array. You do not need a separate if-statement for the length-0 case; the for-loop should naturally execute 0 times in that case, so it just works. The syntax to make a new int array is: new int[desired_length]    (See also: FizzBuzz Code)",
+        "answer_1": "fizzArray(4) → [0, 1, 2, 3]",
+        "answer_2": "fizzArray(1) → [0]",
+        "answer_3": "fizzArray(10) → [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]"
+    },
+    "dataitem_5.5": {
+        "name": "Array-2no14",
+        "URL": "https://codingbat.com/prob/p136648",
+        "desc": "Given an array of ints, return true if it contains no 1's or it contains no 4's.",
+        "answer_1": "no14([1, 2, 3]) → true",
+        "answer_2": "no14([1, 2, 3, 4]) → false",
+        "answer_3": "no14([2, 3, 4]) → true"
+    },
+    "dataitem_5.6": {
+        "name": "Array-2matchUp",
+        "URL": "https://codingbat.com/prob/p136254",
+        "desc": "Given arrays nums1 and nums2 of the same length, for every element in nums1, consider the corresponding element in nums2 (at the same index). Return the count of the number of times that the two elements differ by 2 or less, but are not equal.",
+        "answer_1": "matchUp([1, 2, 3], [2, 3, 10]) → 2",
+        "answer_2": "matchUp([1, 2, 3], [2, 3, 5]) → 3",
+        "answer_3": "matchUp([1, 2, 3], [2, 3, 3]) → 2"
+    },
+    "dataitem_5.7": {
+        "name": "Array-2modThree",
+        "URL": "https://codingbat.com/prob/p159979",
+        "desc": "Given an array of ints, return true if the array contains either 3 even or 3 odd values all next to each other.",
+        "answer_1": "modThree([2, 1, 3, 5]) → true",
+        "answer_2": "modThree([2, 1, 2, 5]) → false",
+        "answer_3": "modThree([2, 4, 2, 5]) → true"
+    },
+    "dataitem_5.8": {
+        "name": "Array-2sameEnds",
+        "URL": "https://codingbat.com/prob/p134300",
+        "desc": "Return true if the group of N numbers at the start and end of the array are the same. For example, with {5, 6, 45, 99, 13, 5, 6}, the ends are the same for n=0 and n=2, and false for n=1 and n=3. You may assume that n is in the range 0..nums.length inclusive.",
+        "answer_1": "sameEnds([5, 6, 45, 99, 13, 5, 6], 1) → false",
+        "answer_2": "sameEnds([5, 6, 45, 99, 13, 5, 6], 2) → true",
+        "answer_3": "sameEnds([5, 6, 45, 99, 13, 5, 6], 3) → false"
+    },
+    "dataitem_5.9": {
+        "name": "Array-2shiftLeft",
+        "URL": "https://codingbat.com/prob/p105031",
+        "desc": "Return an array that is \"left shifted\" by one -- so {6, 2, 5, 3} returns {2, 5, 3, 6}. You may modify and return the given array, or return a new array.",
+        "answer_1": "shiftLeft([6, 2, 5, 3]) → [2, 5, 3, 6]",
+        "answer_2": "shiftLeft([1, 2]) → [2, 1]",
+        "answer_3": "shiftLeft([1]) → [1]"
+    },
+    "dataitem_5.10": {
+        "name": "Array-2post4",
+        "URL": "https://codingbat.com/prob/p164144",
+        "desc": "Given a non-empty array of ints, return a new array containing the elements from the original array that come after the last 4 in the original array. The original array will contain at least one 4. Note that it is valid in java to create an array of length 0.",
+        "answer_1": "post4([2, 4, 1, 2]) → [1, 2]",
+        "answer_2": "post4([4, 1, 4, 2]) → [2]",
+        "answer_3": "post4([4, 4, 1, 2, 3]) → [1, 2, 3]"
+    },
+    "dataitem_5.11": {
+        "name": "Array-2withoutTen",
+        "URL": "https://codingbat.com/prob/p196976",
+        "desc": "Return a version of the given array where all the 10's have been removed. The remaining elements should shift left towards the start of the array as needed, and the empty spaces a the end of the array should be 0. So {1, 10, 10, 2} yields {1, 2, 0, 0}. You may modify and return the given array or make a new array.",
+        "answer_1": "withoutTen([1, 10, 10, 2]) → [1, 2, 0, 0]",
+        "answer_2": "withoutTen([10, 2, 10]) → [2, 0, 0]",
+        "answer_3": "withoutTen([1, 99, 10]) → [1, 99, 0]"
+    },
+    "dataitem_5.12": {
+        "name": "Array-2fizzBuzz",
+        "URL": "https://codingbat.com/prob/p153059",
+        "desc": "This is slightly more difficult version of the famous FizzBuzz problem which is sometimes given as a first problem for job interviews. (See also: FizzBuzz Code.) Consider the series of numbers beginning at start and running up to but not including end, so for example start=1 and end=5 gives the series 1, 2, 3, 4. Return a new String[] array containing the string form of these numbers, except for multiples of 3, use \"Fizz\" instead of the number, for multiples of 5 use \"Buzz\", and for multiples of both 3 and 5 use \"FizzBuzz\". In Java, String.valueOf(xxx) will make the String form of an int or other type. This version is a little more complicated than the usual version since you have to allocate and index into an array instead of just printing, and we vary the start/end instead of just always doing 1..100.",
+        "answer_1": "fizzBuzz(1, 6) → [\"1\", \"2\", \"Fizz\", \"4\", \"Buzz\"]",
+        "answer_2": "fizzBuzz(1, 8) → [\"1\", \"2\", \"Fizz\", \"4\", \"Buzz\", \"Fizz\", \"7\"]",
+        "answer_3": "fizzBuzz(1, 11) → [\"1\", \"2\", \"Fizz\", \"4\", \"Buzz\", \"Fizz\", \"7\", \"8\", \"Fizz\", \"Buzz\"]"
+    },
+    "dataitem_6.1": {
+        "name": "AP-1scoresIncreasing",
+        "URL": "https://codingbat.com/prob/p146974",
+        "desc": "Given an array of scores, return true if each score is equal or greater than the one before. The array will be length 2 or more.",
+        "answer_1": "scoresIncreasing([1, 3, 4]) → true",
+        "answer_2": "scoresIncreasing([1, 3, 2]) → false",
+        "answer_3": "scoresIncreasing([1, 1, 4]) → true"
+    },
+    "dataitem_6.2": {
+        "name": "AP-1scoresAverage",
+        "URL": "https://codingbat.com/prob/p123837",
+        "desc": "Given an array of scores, compute the int average of the first half and the second half, and return whichever is larger. We'll say that the second half begins at index length/2. The array length will be at least 2. To practice decomposition, write a separate helper method int average(int[] scores, int start, int end) {  which computes the average of the elements between indexes start..end. Call your helper method twice to implement scoresAverage(). Write your helper method after your scoresAverage() method in the JavaBat text area. Normally you would compute averages with doubles, but here we use ints so the expected results are exact.",
+        "answer_1": "scoresAverage([2, 2, 4, 4]) → 4",
+        "answer_2": "scoresAverage([4, 4, 4, 2, 2, 2]) → 4",
+        "answer_3": "scoresAverage([3, 4, 5, 1, 2, 3]) → 4"
+    },
+    "dataitem_6.3": {
+        "name": "AP-1wordsWithoutList",
+        "URL": "https://codingbat.com/prob/p183407",
+        "desc": "Given an array of strings, return a new List (e.g. an ArrayList) where all the strings of the given length are omitted. See wordsWithout() below which is more difficult because it uses arrays.",
+        "answer_1": "wordsWithoutList([\"a\", \"bb\", \"b\", \"ccc\"], 1) → [\"bb\", \"ccc\"]",
+        "answer_2": "wordsWithoutList([\"a\", \"bb\", \"b\", \"ccc\"], 3) → [\"a\", \"bb\", \"b\"]",
+        "answer_3": "wordsWithoutList([\"a\", \"bb\", \"b\", \"ccc\"], 4) → [\"a\", \"bb\", \"b\", \"ccc\"]"
+    },
+    "dataitem_6.4": {
+        "name": "AP-1copyEvens",
+        "URL": "https://codingbat.com/prob/p134174",
+        "desc": "Given an array of positive ints, return a new array of length \"count\" containing the first even numbers from the original array. The original array will contain at least \"count\" even numbers.",
+        "answer_1": "copyEvens([3, 2, 4, 5, 8], 2) → [2, 4]",
+        "answer_2": "copyEvens([3, 2, 4, 5, 8], 3) → [2, 4, 8]",
+        "answer_3": "copyEvens([6, 1, 2, 4, 5, 8], 3) → [6, 2, 4]"
+    },
+    "dataitem_6.5": {
+        "name": "AP-1scoreUp",
+        "URL": "https://codingbat.com/prob/p180365",
+        "desc": "The \"key\" array is an array containing the correct answers to an exam, like {\"a\", \"a\", \"b\", \"b\"}. the \"answers\" array contains a student's answers, with \"?\" representing a question left blank. The two arrays are not empty and are the same length. Return the score for this array of answers, giving +4 for each correct answer, -1 for each incorrect answer, and +0 for each blank answer.",
+        "answer_1": "scoreUp([\"a\", \"a\", \"b\", \"b\"], [\"a\", \"c\", \"b\", \"c\"]) → 6",
+        "answer_2": "scoreUp([\"a\", \"a\", \"b\", \"b\"], [\"a\", \"a\", \"b\", \"c\"]) → 11",
+        "answer_3": "scoreUp([\"a\", \"a\", \"b\", \"b\"], [\"a\", \"a\", \"b\", \"b\"]) → 16"
+    },
+    "dataitem_6.6": {
+        "name": "AP-1sumHeights",
+        "URL": "https://codingbat.com/prob/p148138",
+        "desc": "We have an array of heights, representing the altitude along a walking trail. Given start/end indexes into the array, return the sum of the changes for a walk beginning at the start index and ending at the end index. For example, with the heights {5, 3, 6, 7, 2} and start=2, end=4 yields a sum of 1 + 5 = 6. The start end end index will both be valid indexes into the array with start <= end.",
+        "answer_1": "sumHeights([5, 3, 6, 7, 2], 2, 4) → 6",
+        "answer_2": "sumHeights([5, 3, 6, 7, 2], 0, 1) → 2",
+        "answer_3": "sumHeights([5, 3, 6, 7, 2], 0, 4) → 11"
+    },
+    "dataitem_6.7": {
+        "name": "AP-1userCompare",
+        "URL": "https://codingbat.com/prob/p143482",
+        "desc": "We have data for two users, A and B, each with a String name and an int id. The goal is to order the users such as for sorting. Return -1 if A comes before B, 1 if A comes after B, and 0 if they are the same. Order first by the string names, and then by the id numbers if the names are the same. Note: with Strings str1.compareTo(str2) returns an int value which is negative/0/positive to indicate how str1 is ordered to str2 (the value is not limited to -1/0/1). (On the AP, there would be two User objects, but here the code simply takes the two strings and two ints directly. The code logic is the same.)",
+        "answer_1": "userCompare(\"bb\", 1, \"zz\", 2) → -1",
+        "answer_2": "userCompare(\"bb\", 1, \"aa\", 2) → 1",
+        "answer_3": "userCompare(\"bb\", 1, \"bb\", 1) → 0"
+    },
+    "dataitem_7.1": {
+        "name": "Recursion-2groupSum",
+        "URL": "https://codingbat.com/prob/p145416",
+        "desc": "Given an array of ints, is it possible to choose a group of some of the ints, such that the group sums to the given target? This is a classic backtracking recursion problem. Once you understand the recursive backtracking strategy in this problem, you can use the same pattern for many problems to search a space of choices. Rather than looking at the whole array, our convention is to consider the part of the array starting at index start and continuing to the end of the array. The caller can specify the whole array simply by passing start as 0. No loops are needed -- the recursive calls progress down the array. ",
+        "answer_1": "groupSum(0, [2, 4, 8], 10) → true",
+        "answer_2": "groupSum(0, [2, 4, 8], 14) → true",
+        "answer_3": "groupSum(0, [2, 4, 8], 9) → false"
+    },
+    "dataitem_7.2": {
+        "name": "Recursion-2groupSum5",
+        "URL": "https://codingbat.com/prob/p138907",
+        "desc": "Given an array of ints, is it possible to choose a group of some of the ints, such that the group sums to the given target with these additional constraints: all multiples of 5 in the array must be included in the group. If the value immediately following a multiple of 5 is 1, it must not be chosen. (No loops needed.)",
+        "answer_1": "groupSum5(0, [2, 5, 10, 4], 19) → true",
+        "answer_2": "groupSum5(0, [2, 5, 10, 4], 17) → true",
+        "answer_3": "groupSum5(0, [2, 5, 10, 4], 12) → false"
+    },
+    "dataitem_7.3": {
+        "name": "Recursion-2splitOdd10",
+        "URL": "https://codingbat.com/prob/p171660",
+        "desc": "Given an array of ints, is it possible to divide the ints into two groups, so that the sum of one group is a multiple of 10, and the sum of the other group is odd. Every int must be in one group or the other. Write a recursive helper method that takes whatever arguments you like, and make the initial call to your recursive helper from splitOdd10(). (No loops needed.)",
+        "answer_1": "splitOdd10([5, 5, 5]) → true",
+        "answer_2": "splitOdd10([5, 5, 6]) → false",
+        "answer_3": "splitOdd10([5, 5, 6, 1]) → true"
+    },
+    "dataitem_8.1": {
+        "name": "Map-1mapBully",
+        "URL": "https://codingbat.com/prob/p197888",
+        "desc": "Modify and return the given map as follows: if the key \"a\" has a value, set the key \"b\" to have that value, and set the key \"a\" to have the value \"\". Basically \"b\" is a bully, taking the value and replacing it with the empty string.",
+        "answer_1": "mapBully({\"a\": \"candy\", \"b\": \"dirt\"}) → {\"a\": \"\", \"b\": \"candy\"}",
+        "answer_2": "mapBully({\"a\": \"candy\"}) → {\"a\": \"\", \"b\": \"candy\"}",
+        "answer_3": "mapBully({\"a\": \"candy\", \"b\": \"carrot\", \"c\": \"meh\"}) → {\"a\": \"\", \"b\": \"candy\", \"c\": \"meh\"}"
+    },
+    "dataitem_8.2": {
+        "name": "Map-1topping1",
+        "URL": "https://codingbat.com/prob/p182712",
+        "desc": "Given a map of food keys and topping values, modify and return the map as follows: if the key \"ice cream\" is present, set its value to \"cherry\". In all cases, set the key \"bread\" to have the value \"butter\".",
+        "answer_1": "topping1({\"ice cream\": \"peanuts\"}) → {\"bread\": \"butter\", \"ice cream\": \"cherry\"}",
+        "answer_2": "topping1({}) → {\"bread\": \"butter\"}",
+        "answer_3": "topping1({\"pancake\": \"syrup\"}) → {\"bread\": \"butter\", \"pancake\": \"syrup\"}"
+    },
+    "dataitem_8.3": {
+        "name": "Map-1mapAB2",
+        "URL": "https://codingbat.com/prob/p115011",
+        "desc": "Modify and return the given map as follows: if the keys \"a\" and \"b\" are both in the map and have equal values, remove them both.",
+        "answer_1": "mapAB2({\"a\": \"aaa\", \"b\": \"aaa\", \"c\": \"cake\"}) → {\"c\": \"cake\"}",
+        "answer_2": "mapAB2({\"a\": \"aaa\", \"b\": \"bbb\"}) → {\"a\": \"aaa\", \"b\": \"bbb\"}",
+        "answer_3": "mapAB2({\"a\": \"aaa\", \"b\": \"bbb\", \"c\": \"aaa\"}) → {\"a\": \"aaa\", \"b\": \"bbb\", \"c\": \"aaa\"}"
+    },
+    "dataitem_9.1": {
+        "name": "Map-2word0",
+        "URL": "https://codingbat.com/prob/p152303",
+        "desc": "Given an array of strings, return a Map<String, Integer> containing a key for every different string in the array, always with the value 0. For example the string \"hello\" makes the pair \"hello\":0. We'll do more complicated counting later, but for this problem the value is simply 0.",
+        "answer_1": "word0([\"a\", \"b\", \"a\", \"b\"]) → {\"a\": 0, \"b\": 0}",
+        "answer_2": "word0([\"a\", \"b\", \"a\", \"c\", \"b\"]) → {\"a\": 0, \"b\": 0, \"c\": 0}",
+        "answer_3": "word0([\"c\", \"b\", \"a\"]) → {\"a\": 0, \"b\": 0, \"c\": 0}"
+    },
+    "dataitem_9.2": {
+        "name": "Map-2wordCount",
+        "URL": "https://codingbat.com/prob/p117630",
+        "desc": "The classic word-count algorithm: given an array of strings, return a Map<String, Integer> with a key for each different string, with the value the number of times that string appears in the array.",
+        "answer_1": "wordCount([\"a\", \"b\", \"a\", \"c\", \"b\"]) → {\"a\": 2, \"b\": 2, \"c\": 1}",
+        "answer_2": "wordCount([\"c\", \"b\", \"a\"]) → {\"a\": 1, \"b\": 1, \"c\": 1}",
+        "answer_3": "wordCount([\"c\", \"c\", \"c\", \"c\"]) → {\"c\": 4}"
+    },
+    "dataitem_9.3": {
+        "name": "Map-2wordMultiple",
+        "URL": "https://codingbat.com/prob/p190862",
+        "desc": "Given an array of strings, return a Map<String, Boolean> where each different string is a key and its value is true if that string appears 2 or more times in the array.",
+        "answer_1": "wordMultiple([\"a\", \"b\", \"a\", \"c\", \"b\"]) → {\"a\": true, \"b\": true, \"c\": false}",
+        "answer_2": "wordMultiple([\"c\", \"b\", \"a\"]) → {\"a\": false, \"b\": false, \"c\": false}",
+        "answer_3": "wordMultiple([\"c\", \"c\", \"c\", \"c\"]) → {\"c\": true}"
+    },
+    "dataitem_10.1": {
+        "name": "Functional-1doubling",
+        "URL": "https://codingbat.com/prob/p117665",
+        "desc": "Given a list of integers, return a list where each integer is multiplied by 2.",
+        "answer_1": "doubling([1, 2, 3]) → [2, 4, 6]",
+        "answer_2": "doubling([6, 8, 6, 8, -1]) → [12, 16, 12, 16, -2]",
+        "answer_3": "doubling([]) → []"
+    },
+    "dataitem_10.2": {
+        "name": "Functional-1copies3",
+        "URL": "https://codingbat.com/prob/p181634",
+        "desc": "Given a list of strings, return a list where each string is replaced by 3 copies of the string concatenated together.",
+        "answer_1": "copies3([\"a\", \"bb\", \"ccc\"]) → [\"aaa\", \"bbbbbb\", \"ccccccccc\"]",
+        "answer_2": "copies3([\"24\", \"a\", \"\"]) → [\"242424\", \"aaa\", \"\"]",
+        "answer_3": "copies3([\"hello\", \"there\"]) → [\"hellohellohello\", \"theretherethere\"]"
+    },
+    "dataitem_10.3": {
+        "name": "Functional-1rightDigit",
+        "URL": "https://codingbat.com/prob/p152194",
+        "desc": "Given a list of non-negative integers, return an integer list of the rightmost digits. (Note: use %)",
+        "answer_1": "rightDigit([1, 22, 93]) → [1, 2, 3]",
+        "answer_2": "rightDigit([16, 8, 886, 8, 1]) → [6, 8, 6, 8, 1]",
+        "answer_3": "rightDigit([10, 0]) → [0, 0]"
+    },
+    "dataitem_11.1": {
+        "name": "Functional-2noNeg",
+        "URL": "https://codingbat.com/prob/p103456",
+        "desc": "Given a list of integers, return a list of the integers, omitting any that are less than 0.",
+        "answer_1": "noNeg([1, -2]) → [1]",
+        "answer_2": "noNeg([-3, -3, 3, 3]) → [3, 3]",
+        "answer_3": "noNeg([-1, -1, -1]) → []"
+    },
+    "dataitem_11.2": {
+        "name": "Functional-2noZ",
+        "URL": "https://codingbat.com/prob/p105671",
+        "desc": "Given a list of strings, return a list of the strings, omitting any string that contains a \"z\". (Note: the str.contains(x) method returns a boolean)",
+        "answer_1": "noZ([\"aaa\", \"bbb\", \"aza\"]) → [\"aaa\", \"bbb\"]",
+        "answer_2": "noZ([\"hziz\", \"hzello\", \"hi\"]) → [\"hi\"]",
+        "answer_3": "noZ([\"hello\", \"howz\", \"are\", \"youz\"]) → [\"hello\", \"are\"]"
+    },
+    "dataitem_11.3": {
+        "name": "Functional-2noYY",
+        "URL": "https://codingbat.com/prob/p115967",
+        "desc": "Given a list of strings, return a list where each string has \"y\" added at its end, omitting any resulting strings that contain \"yy\" as a substring anywhere.",
+        "answer_1": "noYY([\"a\", \"b\", \"c\"]) → [\"ay\", \"by\", \"cy\"]",
+        "answer_2": "noYY([\"a\", \"b\", \"cy\"]) → [\"ay\", \"by\"]",
+        "answer_3": "noYY([\"xx\", \"ya\", \"zz\"]) → [\"xxy\", \"yay\", \"zzy\"]"
+    }
+}
