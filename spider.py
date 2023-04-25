@@ -30,5 +30,13 @@ def get_data_from_webpage(base_url):
     return response.text
 
 
+data = get_data_from_webpage("https://codingbat.com/java")
+soup = BeautifulSoup(data, "lxml")
+
+table_tags = soup.find_all("table")
+
+table_tags_set_1 = table_tags[2]
+table_tags_set_2 = table_tags[3]
+
 end = time.time()
 print(f"Scraping process finished succesfully in {round(end - start, 2)} seconds!")
