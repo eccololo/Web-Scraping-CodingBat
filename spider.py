@@ -107,7 +107,7 @@ for x_idx, x_link in enumerate(all_main_links):
             print(f"{x_idx}.{y_idx} Dataitem_{x_idx}.{y_idx} saved succesfully to main dataset ...")
 
 try:
-    save_file_to_json("2_assigment_codingbat_dataset_1.json", dataset_dict)
+    save_file_to_json("dataset-1.json", dataset_dict)
 except TypeError as e:
     print("Error: During saving data to JSON file TypeError occured.")
     print(f"Details: {e}")
