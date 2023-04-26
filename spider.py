@@ -91,6 +91,16 @@ for x_idx, x_link in enumerate(all_main_links):
         wanted_data_name = soup.find_all("span", class_="h2")
 
         for table in wanted_data_table:
+
+            driver.get(y_link)
+            solution_text = "Not Found"
+            try:
+                solution_btn = driver.find_element(By.XPATH, "//button[@class='gray']")
+                solution_btn.click()
+                solution_text = "Solution: " + driver.find_element(By.XPATH, "//div[@id='results']/pre").text.strip()
+            except NoSuchElementException:
+                pass
+
             wanted_desc_text = table.find("p").text
             if x_idx == 6 and y_idx == 2:
                 # Special Website Selector Patch for None Standard SubWebsite Structure
@@ -107,6 +117,7 @@ for x_idx, x_link in enumerate(all_main_links):
             wanted_data_data_set_dict["name"] = item_name
             wanted_data_data_set_dict["URL"] = y_link
             wanted_data_data_set_dict["desc"] = wanted_desc_text
+            wanted_data_data_set_dict["solution"] = solution_text
             wanted_data_data_set_dict["answer_1"] = wanted_answer_text_1
             wanted_data_data_set_dict["answer_2"] = wanted_answer_text_2
             wanted_data_data_set_dict["answer_3"] = wanted_answer_text_3
