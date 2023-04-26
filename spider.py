@@ -3,9 +3,17 @@ import requests
 import json
 from fake_useragent import UserAgent
 import time
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.options import Options
+from selenium.common.exceptions import NoSuchElementException
 
 start = time.time()
 base_url = "https://codingbat.com"
+
+opts = Options()
+opts.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36")
+driver = webdriver.Chrome("chromedriver_v112.exe", chrome_options=opts)
 
 
 def read_data_file(file_name):
